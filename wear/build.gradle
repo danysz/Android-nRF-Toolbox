@@ -3,14 +3,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
 
     defaultConfig {
         applicationId "no.nordicsemi.android.nrftoolbox"
         minSdkVersion 23
-        targetSdkVersion 29
-        versionCode 292907703 // target: 29, version: 2.9.0, build: 77, multi-APK: 03
-        versionName "2.9.0"
+        targetSdkVersion 30
+        versionCode 302917703 // target: 29, version: 2.9.0, build: 77, multi-APK: 03
+        versionName "2.9.1"
         resConfigs "en"
     }
     lintOptions {
@@ -37,10 +37,10 @@ configurations.all() { configuration -> exclude group: "org.apache.httpcomponent
 
 dependencies {
     implementation project(':common')
-    implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha03'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'androidx.percentlayout:percentlayout:1.0.0'
-    implementation 'com.google.android.support:wearable:2.7.0'
-    compileOnly 'com.google.android.wearable:wearable:2.7.0'
+    implementation 'com.google.android.support:wearable:2.8.1'
+    compileOnly 'com.google.android.wearable:wearable:2.8.1'
 
     implementation 'no.nordicsemi.android.support.v18:scanner:1.4.3'
 
